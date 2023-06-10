@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "hammad momin",
+      "email": "hammad@gmail.com",
+      "phone": "9876543210",
+      "gender": "male",
+      "password": "hammad@123"
+    },
+    {
+      "id": 2,
+      "name": "anas farooqui",
+      "email": "anas@gmail.com",
+      "phone": "9876543210",
+      "gender": "male",
+      "password": "anas@123"
+    },
+    {
+      "id": 3,
+      "name": "arshad khan",
+      "email": "arshad@gmail.com",
+      "phone": "9876543210",
+      "gender": "male",
+      "password": "arshad@123"
+    },
+    {
+      "id": 4,
+      "name": "sara shaikh",
+      "email": "sara@gmail.com",
+      "phone": "9876543210",
+      "gender": "female",
+      "password": "sara@123"
+    },
+    {
+      "name": "Hammad Momin",
+      "email": "mohdhammad.momin@gmail.com",
+      "phone": 7385585873,
+      "gender": "male",
+      "password": "1234567890",
+      "id": 5
+    }
+  ]
+}
