@@ -1,4 +1,4 @@
-# Blog
+# Angular Basic Concepts Code 
 
 An immersive showcase of Angular's power, featuring a comprehensive integration of components, templates, and TypeScript for a dynamic web experience.
 
