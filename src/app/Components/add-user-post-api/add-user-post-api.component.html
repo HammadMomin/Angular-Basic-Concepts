@@ -1,0 +1,17 @@
+<h3>{{title}}</h3>
+<form [formGroup]="addUserForm" (ngSubmit)="addUser(addUserForm.value)">
+    <input class="my-3" type="text" required placeholder="Enter Name" formControlName="name" name="name" />
+    <br />
+    <input class="my-3" type="text" required placeholder="Enter Email" email formControlName="email" name="email" />
+    <br />
+    <input class="my-3" type="number" required placeholder="Enter Phone Number" formControlName="phone" name="phone">
+    <br>
+    <select class="my-3" required formControlName="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>      
+    <br>
+    <input type="password" required placeholder="Enter Password" formControlName="password" name="password" />
+    <br />
+    <button class="btn btn-success my-3">Add User</button>
+</form>

@@ -1,0 +1,28 @@
+
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+
+    <input class="my-3" type="text" required placeholder="Enter Email" formControlName="name" name="name">
+<br>
+    <input type="password" required placeholder="Enter Password" formControlName="password" name="password">
+    <br>
+    <button class="btn btn-success my-3">Login</button>
+</form>
+
+
+<!-- Validation of Form  -->
+
+<hr>
+<h1 class="my-3" >Reactive Form Validation</h1>
+<form [formGroup]="loginForm2" (ngSubmit)="loginUser2()">
+
+    <input type="text" required placeholder="Enter Email" formControlName="email" name="email">
+<br>
+<span class="error" *ngIf="email && email.invalid && email.touched " >*Email Field is invalid</span><br>
+    <input type="password" required placeholder="Enter Password" formControlName="password" name="password">
+    <br>
+    <span class="error" *ngIf="password && password.invalid && password.touched " >*Password Field is invalid</span><br>
+    <button [disabled]="loginForm2.invalid" class="btn btn-success my-3">Login</button>
+</form>
+
+<hr>
+
