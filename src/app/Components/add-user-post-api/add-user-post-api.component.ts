@@ -7,7 +7,7 @@ import {ApiServiceService} from '../../Services/api-service.service';
   templateUrl: './add-user-post-api.component.html',
   styleUrls: ['./add-user-post-api.component.css']
 })
-export class AddUserPOSTAPIComponent {
+export class AddUserPOSTAPIComponent{
 
   constructor(private postUser : ApiServiceService){ }
 
@@ -19,7 +19,7 @@ export class AddUserPOSTAPIComponent {
     phone : new FormControl('' , [Validators.required]),
     gender : new FormControl('' , [Validators.required]),
     password : new FormControl('' , [Validators.required , Validators.minLength(6), Validators.maxLength(12)
-    , Validators.pattern('a-zA-Z0-9')])
+    ])
   })
   addUser(data:any){
     this.postUser.saveUsers(data).subscribe((data) => {

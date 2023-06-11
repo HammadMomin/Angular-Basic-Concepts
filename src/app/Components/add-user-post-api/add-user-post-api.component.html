@@ -1,4 +1,8 @@
+
+<div class="container">
+  <div class="conatiner2">
 <h3>{{title}}</h3>
+
 <form [formGroup]="addUserForm" (ngSubmit)="addUser(addUserForm.value)">
     <input class="my-3" type="text" required placeholder="Enter Name" formControlName="name" name="name" />
     <br />
@@ -13,5 +17,11 @@
     <br>
     <input type="password" required placeholder="Enter Password" formControlName="password" name="password" />
     <br />
-    <button class="btn btn-success my-3">Add User</button>
+    <button [disabled]="addUserForm.invalid" class="btn btn-success mx-8 my-5">Add User</button>
 </form>
+
+</div>
+</div>
+
+<hr>
+<hr>
