@@ -23,7 +23,7 @@ export class AddUserPOSTAPIComponent{
   })
   addUser(data:any){
     this.postUser.saveUsers(data).subscribe((data) => {
-    console.warn(data)
+    
     console.warn("posted user" , data);
   })
   }

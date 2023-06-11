@@ -46,6 +46,14 @@
       "gender": "male",
       "password": "1234567890",
       "id": 5
+    },
+    {
+      "name": "test1",
+      "email": "test1@gmail.com",
+      "phone": 7385585873,
+      "gender": "male",
+      "password": "test1@123",
+      "id": 6
     }
   ]
 }
